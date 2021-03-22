@@ -1,4 +1,5 @@
-    <!--// Main Banner \\-->
+<!--// Local project \\-->
+<!--// Main Banner \\-->
         <div class="ccg-banner">
             <div class="ccg-banner-slide">
                 <?php if(!empty($homeImages)){ foreach ($homeImages as $key => $value) {
