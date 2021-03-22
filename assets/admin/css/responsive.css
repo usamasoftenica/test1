@@ -1,0 +1,95 @@
+/*	Media 768Px Start */
+@media (min-width: 768px) and (max-width: 990px) {
+	.payment-list form > ul > li { width: 50%; }
+	.extra-form input { width: 100%; }
+	.payment-list { float: left; width: 100%; position: relative; overflow: auto; padding-top: 16px; }
+	.extra-form {
+		top: -10px;
+	    left: 0;
+	    padding: 0 0px 0px 0px;
+	    width: 230px;
+	}
+	.top-margin { margin: 16px 0px 0px; }
+	.extra-form label { display: block; }
+	.sidebar .nav .nav li > a p { margin: 0px; }
+	.sidebar .nav li a p { margin-left: 30px; }
+	.footer .copyright { width: 50%; margin: 22px 0px 10px; text-align: right;}
+	.footer nav.pull-left { float: left !important; width: 50%; }
+	.footer nav.pull-left a { width: 80px !important; }
+	.comment-list figure ~ .text-holder { width: 100%; }
+	.admin-login { width: 60%; }
+	.dashboard-boxes ul li,
+	.payment-list.column > ul > li,.mega-search-extra ul li,.payment-list.scrolling > ul > li { width: 50%; }
+	.payment-list ul li input[type="submit"], .payment-list ul li input[type="button"] { margin: 0px 0px 7px; }
+	.payment-list table { width: 1000px !important; }
+	.search-form ul li,.outbound-email ul li { width: 50%; }
+	.sidebar .nav.hd-btns p { margin-left: 0px; }
+	.sidebar .nav.hd-btns li { width: auto; }
+	.dashboard-boxes-text > span, .dashboard-boxes-text h3 { line-height: 1.5; }
+	.card label { font-size: 12px; }
+	.dataTables_length { display: none !important; }
+	.extra-form input[type="text"] { float: left !important; }
+	.reset { left: 135px; right: auto; }
+	.cross-ab .dataTables_filter .reset  { left: auto; right: 5px; }
+	.payment-list table tr td, .payment-list table tr th { padding: 10px 5px; }
+	.payment-list table tr th { font-size: 14px; }
+	.payment-list .scrolling-box table,.banner-images .payment-list table { width: 100% !important; } 
+	.payment-list.change-dateinput { padding-top: 44px; }
+	.change-dateinput .style-date { top: 0px; }
+	.change-dateinput.new-class .style-date { top: 43px; }
+	.form-inline .form-control { margin: 0px 0px 0px 5px; }
+
+}
+
+/* Media 420Px Start */
+@media (max-width: 767px) {
+	.dashboard-boxes-text > span, .dashboard-boxes-text h3 { line-height: 1.5; }
+	.dataTables_length { display: none !important; }
+	.payment-list form > ul > li { width: 50%; }
+	.extra-form input { width: 100% !important; }
+	.payment-list { float: left; width: 100%; position: relative; overflow: auto; }
+	.dataTable { width: 1000px; }
+	.extra-form { top: 73px; right: auto; padding: 0 15px 0px 0px; left: 0px; width: 50%;}
+	.sidebar .nav .nav li > a p { margin: 0px; }
+	.sidebar .nav li a p { margin-left: 30px; }
+	.footer .copyright { width: 50%; margin: 22px 0px 10px; text-align: right;}
+	.footer nav.pull-left { float: left !important; width: 50%; }
+	.footer nav.pull-left a { width: 80px !important; }
+	.comment-list figure ~ .text-holder { width: 100%; }
+	.admin-login { width: 100%; }
+	.dashboard-boxes ul li,.payment-list.column > ul > li,.mega-search-extra ul li,.payment-list.scrolling > ul > li { width: 100%; }
+	.payment-list ul li input[type="submit"], .payment-list ul li input[type="button"] { margin: 0px 0px 7px; }
+	.payment-list table { width: 1000px; }
+	.search-form ul li,.outbound-email ul li { width: 100%; }
+	.outbound-email ul li input[type="submit"] { margin: 0px 0px !important; }
+	.payment-list { float: left; width: 100%; position: relative; overflow: auto; padding-top: 40px; }
+	.extra-form {
+		top: -10px;
+	    left: 0;
+	    padding: 0 0px 0px 0px;
+	    width: 230px;
+	}
+	.top-margin { margin: 16px 0px 0px; }
+	.extra-form label { display: block; }
+	.change-dateinput.new-class .style-date { width: 270px; top: 0px; right: 0px; }
+	.sidebar .nav.hd-btns p { margin-left: 0px; }
+	.sidebar .nav.hd-btns li { width: auto; }
+}
+
+/* Media 300Px Start */
+@media (max-width: 600px) {
+	.payment-list form > ul > li { width: 100%; }
+	.print { margin: 0px; }
+	.dataTables_length { margin: 0px 0px 60px; }
+	.dataTables_filter { width: 100%; }
+	.extra-form { padding: 0px; top: 0px; width: 100%; position: relative; left: auto; right: 0px !important; float: left; }
+	.extra-form label { display: block; }
+}
+
+/* Media 940Px Start */
+@media screen and (min-width: 991px) and (max-width: 1250px) {
+	.admin-login { width: 60%; }
+	.payment-list { float: left; width: 100%; position: relative; overflow: auto; padding-top: 16px; }
+	.payment-list table { width: 1000px !important; }
+	.dataTables_length { display: none !important; }
+}

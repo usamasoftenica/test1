@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Colorado Campgrounds | Site Description Detail</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <!-- Bootstrap core CSS     -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.css">
+
+    <!-- Animation library for notifications   -->
+    <link href="css/animate.min.css" rel="stylesheet"/>
+
+    <link href="css/toastr.min.css" rel="stylesheet"/>
+    <link href="css/summernote.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+
+    <link href="style.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+  </head>
+  <body class="user">
+	
+    <div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="img/sidebar-5.jpg">
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="index.html" target="_blank" class="simple-text"><img src="img/logo.png" alt=""></a>
+            </div>
+
+           <ul class="nav">
+               <li><a href="index.html"><i class="pe-7s-menu"></i><p>Dashboard</p></a></li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Campgrounds</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-parent-campground.html"><p>Add Parent Campground</p></a></li>
+                       <li><a href="parent-campground-list.html"><p>Parent Campground List</p></a></li>
+                       <li><a href="add-child-campground.html"><p>Add Child Campground</p></a></li>
+                       <li><a href="child-campground-list.html"><p>Child Campgrounds List</p></a></li>
+                       <li><a href="add-site-description.html"><p>Add Site Description</p></a></li>
+                       <li><a href="site-description-detail-list.html"><p>Site Description Detail List</p></a></li>
+                       <li><a href="site-parameters.html"><p>Site Parameters</p></a></li>
+                   </ul>
+               </li>
+                <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Informational Pages</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-informational-page.html"><p>Add Informational Page</p></a></li>
+                       <li><a href="informational-pages.html"><p>Informational Pages List</p></a></li>
+                       <li><a href="add-homepage-content.html"><p>Add Homepage Content</p></a></li>
+                       <li><a href="add-aboutus-content.html"><p>Add About Us Content</p></a></li>
+                   </ul>
+                </li>
+                <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Subscriber</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="subscriber-payments.html"><p>Subscriber Payments</p></a></li>
+                       <li><a href="subscriber-list.html"><p>Subscriber List</p></a></li>
+                       <li><a href="outbound-email.html"><p>Outbound Email</p></a></li>
+                   </ul>
+                </li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>SEO Information</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-seo-info-for-region.html"><p>Add SEO info for Region</p></a></li>
+                       <li><a href="seo-info-for-region.html"><p>SEO info for Region</p></a></li>
+                       <li><a href="add-seo-info-for-homepage.html"><p>Add SEO info for Homepage</p></a></li>
+                       <li><a href="seo-info-for-homepage.html"><p>SEO info for Homepage</p></a></li>
+                   </ul>
+               </li>
+               <li class="ccg-dropdown"><a href="javascript:void(0)"><i class="pe-7s-way"></i><p>Blogs</p></a>
+                    <ul class="ccg-dropdown-menu">
+                       <li><a href="add-blog.html"><p>Add New Blog</p></a></li>
+                       <li><a href="blogs-list.html"><p>Blogs List</p></a></li>
+                   </ul>
+               </li>
+               <li><a href="add-disclaimer.html"><i class="pe-7s-menu"></i><p>Add Disclaimer</p></a></li>
+               <li><a href="annual-subscription.html"><i class="pe-7s-menu"></i><p>Annual Subscription</p></a></li>
+           </ul>
+    	</div>
+    </div>
+
+        <!--// Header \\-->
+        <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Admin</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" class="btn btn-info btn-fill pull-right color-red" style="margin: 12px 3px 0;">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+						<li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--// Header \\-->
+
+        <!--// Subheader \\-->
+        <div class="ccg-subheader">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Site Description Detail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Subheader \\-->
+
+        <!--// Main Content \\-->
+		<div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">Site Description Detail</h4>
+                            </div>
+                            <div class="content">
+                                <div class="payment-list">
+                                  <div class="site-search">
+                                        <form action="">
+                                            <ul class="show-search-form a">
+                                                <li>
+                                                    <label for="">Which region do you want to explore?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">West North</option>
+                                                        <option value="">North</option>
+                                                        <option value="">North East</option>
+                                                        <option value="">West</option>
+                                                        <option value="">Central</option>
+                                                        <option value="">East</option>
+                                                        <option value="">South West</option>
+                                                        <option value="">South</option>
+                                                        <option value="">South East</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What level of camping do you desire?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">No hookups, electric</option>
+                                                        <option value="">electric & water</option>
+                                                        <option value="">electric, water and sewer</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What type of campground do you want?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">National Park</option>
+                                                        <option value="">National Monument</option>
+                                                        <option value="">State Park</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What type of camping are you doing?</label>
+                                                    <select class="motorhome" name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="motorhome">Motorhome/RV</option>
+                                                        <option value="">Trailer</option>
+                                                        <option value="">Tent</option>
+                                                    </select>
+                                                </li>
+                                                <li class="full extra-form rv">
+                                                    <ul>
+                                                        <li>
+                                                            <label for="">What length campsite is required?</label>
+                                                            <select name="" id="">
+                                                                <option value="">Select</option>
+                                                                <option value="">20</option>
+                                                                <option value="">30</option>
+                                                                <option value="">35</option>
+                                                                <option value="">40</option>
+                                                                <option value="">45</option>
+                                                                <option value="">50+</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <label for="">Do you need electricity?</label>
+                                                            <select class="electricity" name="" id="">
+                                                                <option value="">Select</option>
+                                                                <option value="electricity">Yes</option>
+                                                                <option value="">No</option>
+                                                                <option value="">Doesn’t matter</option>
+                                                            </select>
+                                                        </li>
+                                                        <li class="full extra-form electricity">
+                                                            <ul>
+                                                                <li>
+                                                                    <label for="">What Amperage?</label>
+                                                                    <select name="" id="">
+                                                                        <option value="">Select</option>
+                                                                        <option value="">20</option>
+                                                                        <option value="">30</option>
+                                                                        <option value="">50</option>
+                                                                    </select>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <label for="">Do you need a water hook-up?</label>
+                                                            <select name="" id="">
+                                                                <option value="">Select</option>
+                                                                <option value="">Yes</option>
+                                                                <option value="">No</option>
+                                                                <option value="">Doesn’t matter</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <label for="">Do you need sewer hook-up?</label>
+                                                            <select name="" id="">
+                                                                <option value="">Select</option>
+                                                                <option value="">Yes</option>
+                                                                <option value="">No</option>
+                                                                <option value="">Doesn’t matter</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <label for="">What kind of view do you want?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Lake</option>
+                                                        <option value="">Mountain</option>
+                                                        <option value="">River</option>
+                                                        <option value="">Creek</option>
+                                                        <option value="">Meadow</option>
+                                                        <option value="">Woods</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What level of shade is required?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Full shade</option>
+                                                        <option value="">Partial shade</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you require a picnic table?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Yes</option>
+                                                        <option value="">No</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you require a fire ring?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Yes</option>
+                                                        <option value="">No</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you require a grill?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Yes</option>
+                                                        <option value="">No</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What are your maximum yards to a restroom?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">20</option>
+                                                        <option value="">30</option>
+                                                        <option value="">40</option>
+                                                        <option value="">50</option>
+                                                        <option value="">60</option>
+                                                        <option value="">70</option>
+                                                        <option value="">80</option>
+                                                        <option value="">90</option>
+                                                        <option value="">100</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">What are your maximum yards to a water source?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">20</option>
+                                                        <option value="">30</option>
+                                                        <option value="">40</option>
+                                                        <option value="">50</option>
+                                                        <option value="">60</option>
+                                                        <option value="">70</option>
+                                                        <option value="">80</option>
+                                                        <option value="">90</option>
+                                                        <option value="">100</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                          <span>
+                                              <a href="javascript:void(0)" class="show-form a">Advanced Search</a>
+                                              <!-- <div class="clearfix"></div> -->
+                                              <input type="submit" value="Submit">
+                                          </span>
+                                      </form>
+                                    </div>
+                                    <table class="detail">
+                                      <tr>
+                                        <th><span>Site #</span><span>Picture</span> <span>Spacing</span> <span>Type of View</span></th>
+                                        <th><span>Tent</span><span>Trailer</span> <span>RV</i></span><span>#Guests</span><span>Pets</span><span>#Cars</span></th>
+                                        <th><span>Length</span><span>Tent Pad</span> <span>Level</span> <span>Base</span></th>
+                                        <th><span>Access</span></th>
+                                        <th><span>Elec</span><span>Amps</span></th>
+                                        <th><span>Water</span> <span>Sewer</span></th>
+                                        <th><span>Wifi</span><span>Cable TV</span></th>
+                                        <th><span>Shade</span><span>Partial Shade</span><span>Sun</span></th>
+                                        <th><span>Table</span> <span>Firing </span> <span>Grill</span></th>
+                                        <th><span>Yrds to</span><span>Toilet</span><span>Water</span><span>Trash</span></th>
+                                      </tr>
+                                      <tr>
+                                          <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span> <a href="#" class="heart-icon fa fa-heart"></a></td>
+                                          <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Yes"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                          <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                          <td><span>Back In</span></td>
+                                          <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                          <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                          <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                          <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                          <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                          <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span></td>
+                                          <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Yes"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                          <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                          <td><span>Back In</span></td>
+                                          <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                          <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                          <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                          <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                          <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                          <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span></td>
+                                          <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Yes"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                          <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                          <td><span>Back In</span></td>
+                                          <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                          <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                          <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                          <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                          <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                          <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                      </tr>
+                                  </table>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+		<!--// Main Content \\-->
+
+        <!--// Footer \\-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <a href="#" target="_blank" style="float: left; width: 230px;"><img src="img/logo.png" alt=""></a>
+                </nav>
+                <p class="copyright pull-right">
+                    © 2019 All Right Reserved.
+                </p>
+            </div>
+        </footer>
+        <!--// Footer \\-->
+
+	</div>
+	<div class="clearfix"></div>
+    </div>
+    <!--// Main Wrapper \\-->
+
+	<!--   Core JS Files   -->
+    <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/multiple-select@1.3.1/dist/multiple-select.min.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="js/bootstrap-notify.js"></script>
+
+    <script src="js/toster.js"></script>
+    <script src="js/summernote-updated.min.js"></script>
+    <script src="js/summernote-active.js"></script>
+
+    
+	<script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <!-- editor -->
+
+<!-- /editor -->
+<script>
+  $('.show-form').click(function () {
+            $('.show-search-form').toggleClass('show');   
+        });
+
+  $('.show-form').click(function(){
+            var $this = $(this);
+            $this.toggleClass('show-form');
+            if($this.hasClass('show-form')){
+                $this.text('Advanced Search');         
+            } else {
+                $this.text('Basic Search');
+            }
+        });
+
+
+  //*******************************
+        // Toggle Function
+        //******************************
+        $(".extra-form.rv,.extra-form.electricity").hide();
+
+        $('.motorhome').on('change',function(){ 
+        var value = $(this).val();
+        if(value=='motorhome'){
+          $(".extra-form.rv").show();
+        }else{
+          $(".extra-form.rv").hide();
+        }
+    });
+
+        $('.electricity').on('change',function(){ 
+        var value = $(this).val();
+        if(value=='electricity'){
+          $(".extra-form.electricity").show();
+        }else{
+          $(".extra-form.electricity").hide();
+        }
+
+    });
+</script>
+  </body>
+</html>

@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Colorado Campgrounds | Search</title>
+
+    <!-- Css Files -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/flaticon.css" rel="stylesheet">
+    <link href="css/slick-slider.css" rel="stylesheet">
+    <link href="css/t-scroll.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+  </head>
+  <body>
+	
+    <!--// Main Wrapper \\-->
+    <div class="ccg-main-wrapper">
+
+        <!--// Header \\-->
+        <header id="ccg-header" class="ccg-header-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="header-nav">
+                            <!-- <div class="user-login">
+                                <a href="#" class="fa fa-user"> <small>Jone Doe</small></a>
+                                <ul>
+                                    <li><a href="#">Dashborad</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div> -->
+                            <div class="user-login-btn">
+                                <a href="login.html">Login</a> / <a href="subscribe.html">Subscribe</a>
+                            </div>
+                            <a href="#" target="_blank" class="header-btn"><i class="fa fa-youtube"></i> Youtube</a>
+                            <nav class="navbar navbar-expand-lg">
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Forum</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                                  </li>
+                                  <li class="nav-item active">
+                                    <a class="nav-link" href="search.html">Search</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// Header \\-->
+
+		<!--// Subheader \\-->
+		<div class="ccg-subheader" style="background-image: url('images/sub-header-img.jpg');">
+            <span class="ccg-subheader-transparent" style="background-color: tan;"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Search</h1>
+                        <ul class="ccg-breadcrumb">
+                            <li><a href="index.html">Home Page</a></li>
+                            <li>Search</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!--// Subheader \\-->
+
+		<!--// Main Content \\-->
+		<div class="ccg-main-content">
+<div class="modal fade" id="iconModal" tabindex="-1" role="dialog" aria-labelledby="iconModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="iconModalLabel">Description of Icons</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="icons-modal">
+            <table>
+                <tr>
+                    <th>
+                        <span style="text-align: center;">Column 1</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 2</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 3</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 5</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 6</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 7</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 8</span>
+                    </th>
+                    <th>
+                        <span style="text-align: center;">Column 9</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <span><img src="images/icons/Mountains.png" alt=""> Mountains</span>
+                        <span><img src="images/icons/Lake.png" alt=""> Lake</span>
+                        <span><img src="images/icons/River.png" alt=""> River/Creek</span>
+                        <!-- <span><img src="images/icons/prairie.png" alt=""> Prairie</span> -->
+                        <span><img src="images/icons/Hills.png" alt=""> Hills</span>
+                        <span><img src="images/icons/Meadow.png" alt=""> Meadow</span>
+                        <span><img src="images/icons/Wood.png" alt=""> Woods</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Tent.png" alt=""> Tent</span>
+                        <span><img src="images/icons/Trailer.png" alt=""> Trailer</span>
+                        <span><img src="images/icons/RV.png" alt=""> RV</span>
+                        <span><img src="images/icons/guests.png" alt=""> Guests</span>
+                        <span><img src="images/icons/Pets.png" alt=""> Pets</span>
+                        <span><img src="images/icons/Car.png" alt=""> Vehicle</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Length.png" alt=""> Length</span>
+                         <span><img src="images/icons/Tent-Pad.png" alt=""> Tent Pad</span>
+                        <span><img src="images/icons/Level.png" alt=""> Level</span>
+                        <span><img src="images/icons/Base.png" alt=""> Base</span>
+                    </th>
+                    <th>
+                        <span><img style="width: 30px;" src="images/icons/Elec.png" alt=""> Electricity</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Public-Water.png" alt=""> Water</span>
+                        <span><img src="images/icons/Sewer.png" alt=""> Sewer</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Wifi.png" alt=""> Wifi</span>
+                        <span><img src="images/icons/Cable-TV.png" alt=""> Cable TV</span>
+                        <span><img src="images/icons/Phone.png" alt=""> Phone</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Sun.png" alt=""> Sun</span>
+                        <span><img src="images/icons/Shade.png" alt=""> Shade</span>
+                        <span><img src="images/icons/Partial-Shade.png" alt=""> Partial Shade</span>
+                    </th>
+                    <th>
+                        <span><img src="images/icons/Table.png" alt=""> Table</span>
+                        <span><img src="images/icons/FireRing.png" alt=""> Fire-ring</span>
+                        <span><img src="images/icons/FireRing-Grill.png" alt=""> FireRing Grill</span>
+                        <span><img src="images/icons/Grill.png" alt=""> Grill</span>
+                        <span><img src="images/icons/Shelter.png" alt=""> Shelter</span>
+                        <!-- <span><img src="images/icons/Tent-Pad.png" alt=""> Tent Pad</span> -->
+                    </th>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+            <div class="fixed-btn">
+                <a href="#iconModal" data-toggle="modal" class="fixed-button">Description of icons</a>
+                <a href="javascript:void(0)" class="fa fa-long-arrow-right close-btn"></a>
+                <!-- <a href="javascript:void(0)" class="fa fa-long-arrow-right open-btn"></a> -->
+            </div>
+            <!--// Main Section \\-->
+            <div class="ccg-main-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="site-search">
+                                <form action="">
+                                    <a href="#" data-toggle="tooltip" title="Click here to see Peggy & Steve’s top-rated campsites across all campgrounds?">Click here to see Peggy & Steve’s ...</a>
+                                    <ul class="show-search-form">
+                                        <li>
+                                            <label for="">Which region do you want to explore?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">West North</option>
+                                                <option value="">North</option>
+                                                <option value="">North East</option>
+                                                <option value="">West</option>
+                                                <option value="">Central</option>
+                                                <option value="">East</option>
+                                                <option value="">South West</option>
+                                                <option value="">South</option>
+                                                <option value="">South East</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What level of camping do you desire?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">No hookups</option>
+                                                <option value="">electric</option>
+                                                <option value="">electric & water</option>
+                                                <option value="">electric, water and sewer</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What type of campground do you want?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">National Park</option>
+                                                <option value="">National Monument</option>
+                                                <option value="">State Park</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What type of camping are you doing?</label>
+                                            <select class="motorhome" name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="motorhome">Motorhome/RV</option>
+                                                <option value="">Trailer</option>
+                                                <option value="">Tent</option>
+                                            </select>
+                                        </li>
+                                        <li class="full extra-form rv">
+                                            <ul>
+                                                <li>
+                                                    <label for="">What length campsite is required?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">20</option>
+                                                        <option value="">30</option>
+                                                        <option value="">35</option>
+                                                        <option value="">40</option>
+                                                        <option value="">45</option>
+                                                        <option value="">50+</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you need electricity?</label>
+                                                    <select class="electricity" name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="electricity">Yes</option>
+                                                        <option value="">No</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li class="full extra-form electricity">
+                                                    <ul>
+                                                        <li>
+                                                            <label for="">What Amperage?</label>
+                                                            <select name="" id="">
+                                                                <option value="">Select</option>
+                                                                <option value="">20</option>
+                                                                <option value="">30</option>
+                                                                <option value="">50</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you need a water hook-up?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Yes</option>
+                                                        <option value="">No</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <label for="">Do you need sewer hook-up?</label>
+                                                    <select name="" id="">
+                                                        <option value="">Select</option>
+                                                        <option value="">Yes</option>
+                                                        <option value="">No</option>
+                                                        <option value="">Doesn’t matter</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <label for="">What kind of view do you want?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Lake</option>
+                                                <option value="">Mountain</option>
+                                                <option value="">River</option>
+                                                <option value="">Creek</option>
+                                                <option value="">Meadow</option>
+                                                <option value="">Woods</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What level of shade is required?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Full shade</option>
+                                                <option value="">Partial shade</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">Do you require a picnic table?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">Do you require a fire ring?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">Do you require a grill?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">Yes</option>
+                                                <option value="">No</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What are your maximum yards to a restroom?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">40</option>
+                                                <option value="">50</option>
+                                                <option value="">60</option>
+                                                <option value="">70</option>
+                                                <option value="">80</option>
+                                                <option value="">90</option>
+                                                <option value="">100</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <label for="">What are your maximum yards to a water source?</label>
+                                            <select name="" id="">
+                                                <option value="">Select</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">40</option>
+                                                <option value="">50</option>
+                                                <option value="">60</option>
+                                                <option value="">70</option>
+                                                <option value="">80</option>
+                                                <option value="">90</option>
+                                                <option value="">100</option>
+                                                <option value="">Doesn’t matter</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                    <span>
+                                        <a href="javascript:void(0)" class="show-form">Advanced Search</a>
+                                        <!-- <div class="clearfix"></div> -->
+                                        <input type="submit" value="Submit">
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="search-result">
+                                <ul class="titles">
+                                    <li>
+                                        <a href="parent-campground.html">Arkansas Headwaters Recreation Area (AHRA) Info</a>
+                                    </li>
+                                    <li>
+                                        <a href="child-campground.html">Five Point info</a>
+                                    </li>
+                                </ul>
+                                <div class="campground-map-detail">
+                                    <table class="detail">
+                                        <tr>
+                                            <th><span>Site #</span><span>Picture</span> <span>Spacing</span> <span>Type of View</span></th>
+                                            <th><span>Tent</span><span>Trailer</span> <span>RV</i></span><span>#Guests</span><span>Pets</span><span>#Cars</span></th>
+                                            <th><span>Length</span><span>Tent Pad</span> <span>Level</span> <span>Base</span></th>
+                                            <th><span>Access</span></th>
+                                            <th><span>Elec</span><span>Amps</span></th>
+                                            <th><span>Water</span> <span>Sewer</span></th>
+                                            <th><span>Wifi</span><span>Cable TV</span></th>
+                                            <th><span>Shade</span><span>Partial Shade</span><span>Sun</span></th>
+                                            <th><span>Table</span> <span>Firing </span> <span>Grill</span></th>
+                                            <th><span>Yrds to</span><span>Toilet</span><span>Water</span><span>Trash</span></th>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span style="margin: 5px 0px 15px; display: inline-block;">Tight</span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span> <a data-toggle="tooltip" style="color: red;" title="Favorite" href="#" class="heart-icon fa fa-heart"></a></td>
+                                            <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Domestic only"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                            <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                            <td><span>Back In</span></td>
+                                            <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                            <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                            <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                            <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                            <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                            <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span style="margin: 5px 0px 15px; display: inline-block;">Tight</span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span> <a data-toggle="tooltip" title="Add Favorite" href="#" class="heart-icon fa fa-heart"></a></td>
+                                            <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Domestic only"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                            <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                            <td><span>Back In</span></td>
+                                            <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                            <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                            <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                            <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                            <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                            <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span><span><a class="elem" href="images/map2.png" data-lcl-thumb="images/map2.png"><img src="images/img.png" alt=""></a></span> <span style="margin: 5px 0px 15px; display: inline-block;">Tight</span> <span><i class="icon-River" data-toggle="tooltip" title="River"></i></span> <a data-toggle="tooltip" title="Add Favorite" href="#" class="heart-icon fa fa-heart"></a></td>
+                                            <td><span><i class="icon-Tent" data-toggle="tooltip" title="Tent"></i></span><span><i class="icon-trailer" data-toggle="tooltip" title="Trailer"></i></span> <span><i class="icon-RV" data-toggle="tooltip" title="RV"></i></span><span><i class="icon-guests" data-toggle="tooltip" title="6 Pers"></i></span><span><i class="icon-Pets" data-toggle="tooltip" title="Domestic only"></i></span><span><i class="icon-Car" data-toggle="tooltip" title="2 Cars"></i></span></td>
+                                            <td><span>39 ft</span><span>18 / 14</span> <span>Slight</span> <span>Gravel</span></td>
+                                            <td><span>Back In</span></td>
+                                            <td><span><i class="icon-Elec" data-toggle="tooltip" title="Elec"></i></span></td>
+                                            <td><span><i class="icon-Water" data-toggle="tooltip" title="Water"></i></span></td>
+                                            <td><span><i class="icon-Wifi" data-toggle="tooltip" title="Wifi"></i></span></td>
+                                            <td><span><i class="icon-Sun" data-toggle="tooltip" title="Sun"></i></span></td>
+                                            <td><span><i class="icon-Table" data-toggle="tooltip" title="Table"></i></span> <span><i class="icon-Fire" data-toggle="tooltip" title="Firing"></i></span> <span><i class="icon-Grill" data-toggle="tooltip" title="Grill"></i></span></td>
+                                            <td><span>Xx Yrds</span><span>Xx Yrds</span><span>Xx Yrds</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Main Section \\-->
+
+		</div>
+		<!--// Main Content \\-->
+
+        <!--// Footer \\-->
+        <footer id="ccg-footer" class="ccg-footer-one">
+            
+            <div class="ccg-footer-newsletter">
+                <span class="newsletter-transpernt"></span>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="ccg-newsletter-text">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <p>Sign up to get latest updates and offers.</p>
+                            </div>
+                            <form>
+                                <input type="email" value="Type Your Email" onblur="if(this.value == '') { this.value ='Type Your Email'; }" onfocus="if(this.value =='Type Your Email') { this.value = ''; }">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Footer Widget \\-->
+            <div class="ccg-footer-widget">
+                <span class="post-transpernt"></span>
+                <div class="container">
+                    <div class="row">
+                        <!--// Widget widget text \\-->
+                        <aside class="col-md-3 widget widget_text" style="text-align: center;">
+                            <a href="index.html" class="footer-logo"><img src="images\footer-logo.png" alt=""></a>
+                            <ul class="ccg-footer-social">
+                                <li><a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"> <span>YouTube</span></a></li>
+                            </ul>
+                        </aside>
+                        <!--// Widget widget text \\-->
+
+                        <!--// Widget twitter feeds \\-->
+                        <aside class="col-md-5 widget widget_text">
+                            <div class="ccg-footer-title"><h2>About Us</h2></div>
+                            <p>Peggy & Steve Hendryx reside in the Colorado Mountains, drawn to the State by its outdoon activities, blue skies, and sheer beauty. After purchasing a teardrop camper in 2016, we began toexplore the corners of Colorado</p>
+                            <div class="ccg-footer-title" style=" margin: 0 0px 15px; font-size: 20px;"><h2>Disclaimer</h2></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </aside>
+                        <!--// Widget twitter feeds \\-->
+
+                        <!--// Widget twitter feeds \\-->
+                        <aside class="col-md-4 widget widget_contact_info">
+                            <div class="ccg-footer-title"><h2>Contact Info</h2></div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <p><a href="mailto:info@campgrounds.com">info@campgrounds.com</a></p>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!--// Widget twitter feeds \\-->
+
+                        <div class="col-md-12">
+                            <div class="ccg-copyright">
+                              <p>Developed by <a href="https://www.softenica.com/" target="_blank">Softenica Technologies</a></p>
+                                <ul>
+                                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                                    <li><a href="subscribe.html">Login or Subscribe</a></li>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--// Footer Widget \\-->
+
+        </footer>
+        <!--// Footer \\-->
+
+	<div class="clearfix"></div>
+    </div>
+    <!--// Main Wrapper \\-->
+
+
+	<!-- jQuery (necessary for JavaScript plugins) -->
+	<script type="text/javascript" src="script/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/slick.slider.min.js"></script>
+    <script type="text/javascript" src="script/t-scroll.min.js"></script>
+    <script type="text/javascript" src="script/functions.js"></script>
+       <script>
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+        $('.show-form').click(function () {
+            $('.show-search-form').toggleClass('show');
+        });
+
+
+
+        $('.show-form').click(function(){
+            var $this = $(this);
+            $this.toggleClass('show-form');
+            if($this.hasClass('show-form')){
+                $this.text('Advanced Search');         
+            } else {
+                $this.text('Basic Search');
+            }
+        });
+
+
+        //*******************************
+        // Toggle Function
+        //******************************
+        $(".extra-form.rv,.extra-form.electricity").hide();
+
+        $('.motorhome').on('change',function(){ 
+        var value = $(this).val();
+        if(value=='motorhome'){
+          $(".extra-form.rv").show();
+        }else{
+          $(".extra-form.rv").hide();
+        }
+    });
+
+        $('.electricity').on('change',function(){ 
+        var value = $(this).val();
+        if(value=='electricity'){
+          $(".extra-form.electricity").show();
+        }else{
+          $(".extra-form.electricity").hide();
+        }
+
+    });
+
+
+
+
+    </script>
+  </body>
+</html>

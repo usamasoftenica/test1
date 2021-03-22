@@ -1,0 +1,6 @@
+.sidebar:before {
+	background-size: cover !important;
+}
+.error{
+	color:red;
+}
